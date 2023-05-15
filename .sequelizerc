@@ -1,0 +1,11 @@
+// .sequelizerc
+
+const path = require('path');
+
+//  Konfigurasi jalur folder
+module.exports = {
+  'config': path.resolve('config', 'database.js'),
+  'models-path': path.resolve('app', 'models'),
+  'seeders-path': path.resolve('db', 'seeders'),
+  'migrations-path': path.resolve('db', 'migrations')
+};
