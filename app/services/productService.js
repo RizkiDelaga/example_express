@@ -13,19 +13,6 @@ module.exports = {
             throw error;
         }
     },
-
-    // async getByName(name) {
-    //     try {
-    //         return await Product.findOne({
-    //             where: {
-    //                 name: name
-    //             }
-    //         })
-    //     } catch (error) {
-    //         throw error;
-    //     }
-    // },
-
     
     async getById(id) {
         try {

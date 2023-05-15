@@ -20,22 +20,6 @@ module.exports = {
         }
     },
 
-    async getByName(req, res) {
-        try {
-            const data = await productService.getByName(req.params.name)
-            res.status(200).json({
-                status: true,
-                message: "Data Berhasil di Tampilkan!",
-                data: data
-            })
-        } catch (error) {
-            res.status(404).json({
-                status: false,
-                message: error.message
-            })
-        }
-    },
-
     async getById(req, res) {
         try {
             const data = await productService.getById(req.params.id)
